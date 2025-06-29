@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+  <h1>Contact Me</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend><strong>Personal Information</strong></legend>
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="+972-50-1234567"><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Reason for Contact</strong></legend>
+
+      <label>What is your inquiry about?</label><br>
+      <input type="radio" id="job" name="reason" value="job" required>
+      <label for="job">Job Opportunity</label><br>
+
+      <input type="radio" id="collab" name="reason" value="collaboration">
+      <label for="collab">Collaboration</label><br>
+
+      <input type="radio" id="question" name="reason" value="question">
+      <label for="question">General Question</label><br><br>
+
+      <label for="subject">Subject:</label><br>
+      <select id="subject" name="subject" required>
+        <option value="">-- Please choose --</option>
+        <option value="frontend">Front-End Development</option>
+        <option value="backend">Back-End Development</option>
+        <option value="fullstack">Full-Stack Projects</option>
+      </select><br><br>
+    </fieldset>
+
+    <fieldset>
+      <legend><strong>Message</strong></legend>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="40" placeholder="Write your message here..." required></textarea><br><br>
+
+      <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+      <label for="subscribe">Subscribe to newsletter</label><br><br>
+    </fieldset>
+
+    <input type="submit" value="Send Message">
+    <input type="reset" value="Reset Form">
+  </form>
+
+  <p>Thank you for visiting my personal introduction page! Feel free to reach out if you have any questions or opportunities.</p>
+</body>
+</html>

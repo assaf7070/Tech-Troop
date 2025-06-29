@@ -1,0 +1,22 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.bookmark {
+  display: block;
+  width: 300px;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s;
+}
+
+.bookmark:hover {
+  background-color: #e0e0e0;
+}

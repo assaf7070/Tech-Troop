@@ -1,0 +1,17 @@
+.line1 {
+  font-size: 24px;
+  color: darkblue;
+  font-family: Arial, sans-serif;
+}
+
+.line2 {
+  font-size: 20px;
+  color: darkred;
+  font-family: Georgia, serif;
+}
+
+.line3 {
+  font-size: 18px;
+  color: seagreen;
+  font-family: "Courier New", monospace;
+}
