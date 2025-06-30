@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 2</title>
+  <style>
+    h2 {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      width: 40%;
+      display: flex;
+      border: 3px solid purple;
+      background-color: pink;
+      margin-left: 0; /* align left */
+      height: 100px; /* force height so the boxes are visible */
+    }
+
+    .section {
+      width: calc(100% / 3);
+      /* height: calc(100% / 3); */
+      border-left: 2px solid black;
+      box-sizing: border-box;
+    }
+
+    .section:first-child {
+      border-left: none;
+    }
+  </style>
+</head>
+<body>
+  <h2>ex 2</h2>
+  <div class="container">
+    <div class="section"></div>
+    <div class="section"></div>
+    <div class="section"></div>
+  </div>
+</body>
+</html>
