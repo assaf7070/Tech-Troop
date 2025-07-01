@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.background {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  background-color: #7762f2;
+  border-radius: 8px;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.bar {
+  width: 30px;
+  background-color: lightgray;
+  position: absolute;
+  bottom:10px;
+  left: 5px;
+}
+
+#bar-1 { 
+    height: 30px; 
+}
+#bar-2 { 
+    left: 50px;
+    height: 90px; 
+}
+#bar-3 { 
+    height: 140px; 
+    left: 100px;
+}
+#bar-4 { 
+    height: 130px;
+    left: 150px; 
+}
+#bar-5 { 
+    height: 110px;
+    left: 200px; 
+}
+#bar-6 { 
+    height: 70px;
+    left: 250px;
+}
+
+.text {
+  position: absolute;
+  font-weight: bold;
+  color: black;
+}
+
+#money {
+  top: 10px;
+  left: 10px;
+}
+
+#time {
+  bottom: 10px;
+  right: 10px;
+}
