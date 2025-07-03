@@ -1,0 +1,40 @@
+.parent {
+    height: 100vh;
+    display: flex;
+    border-color: #afabab;
+    border-style: solid;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+#child1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 2px #afabab;
+
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(84, 149, 228);
+    margin: 10px;
+    border-radius: 50%;
+
+
+}
+
+#child2 {
+    width: 50%;
+    height: auto;
+    margin: 20px;
+    justify-content: center;
+    align-content: center;
+
+
+
+}

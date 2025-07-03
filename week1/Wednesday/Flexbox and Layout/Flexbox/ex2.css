@@ -1,0 +1,22 @@
+.parent {
+    display: flex;
+    border-color: black;
+    border-style: solid;
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
+
+.child {
+    width: 25%;
+    height: 80px;
+    background-color: rgb(84, 149, 228);
+    margin: 10px;
+}
+
+#child6 {
+    flex-grow: 1;
+}
+#child7 {
+    flex-grow: 1;
+}
