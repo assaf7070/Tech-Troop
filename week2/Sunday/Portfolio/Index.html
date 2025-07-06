@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -122,13 +129,22 @@
         </form>
         <div class="contact-info">
           <h3>Contact Information</h3>
-          <p>📧 assaf7070@gmail.com</p>
-          <p>📱 +972 (050) 595-0962</p>
+          <p>📧 <a href="mailto:assaf7070@gmail.com">assaf7070@gmail.com</a></p>
+
+          <p>📱 <a href="tel:+972505950962">+972 (050) 595-0962</a></p>
+
           <p>📍 Israel</p>
           <div class="social-icons">
-            <a href="#"><img src="resources/linkedin.svg" alt="LinkedIn" /></a>
-            <a href="#"><img src="resources/github.svg" alt="GitHub" /></a>
-            <a href="#"><img src="resources/twitter.svg" alt="Twitter" /></a>
+            <!-- <a href="#"><img src="resources/linkedin.svg" alt="LinkedIn" /></a> -->
+            <a href="https://linkedin.com/in/assaf-shukrun" target="_blank">
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/assaf7070" target="_blank">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.facebook.com/assaf.shukrun" target="_blank">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
           </div>
         </div>
       </div>
@@ -139,12 +155,12 @@
     </footer>
 
     <script>
-    const menuIcon = document.getElementById("menu-icon");
-    const navLinks = document.querySelector(".nav-links");
+      const menuIcon = document.getElementById("menu-icon");
+      const navLinks = document.querySelector(".nav-links");
 
-    menuIcon.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
-  </script>
+      menuIcon.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
