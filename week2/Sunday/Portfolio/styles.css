@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    background-color: white;
+    color: #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0056b3;
+}
+
+ul.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links li {
+    display: inline;
+}
+.nav-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2em;
+    
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+
+#home {
+    background-color: #f4f4f4;
+    padding: 50px 20px;
+    /* text-align: center; */
+    display: flex;
+    justify-content: space-around;
+}   
+
+.my-photo img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.short-intro {
+    max-width: 500px;
+}
+
+.short-intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.short-intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.get-in-touch-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.get-in-touch-button:hover {
+    background-color: #0056b3;
+}
+
+#about {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
