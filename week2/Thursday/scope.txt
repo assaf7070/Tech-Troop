@@ -1,0 +1,107 @@
+
+-----Section 1-----
+
+What happens:
+"running" is logged 8 times.
+
+"Finished running 8 miles" is logged.
+
+Error on the last line: distance is not defined.
+
+Why?
+distance is declared with let inside the if block → it's block-scoped and not accessible outside.
+
+Trying to use distance outside its block causes a ReferenceError.
+
+Scope:
+run is global
+
+distance is local to the if block
+
+i (because it uses var) is function-scoped, or global in this case
+
+-----Section 2-----
+
+What happens:
+nothing is logged
+
+Error: cowSound is not defined
+
+Why?
+The condition is false (13 == "space" is false).
+
+Inside the else, cowSound was never defined, so using it causes a ReferenceError.
+
+Scope:
+cowSound was declared with let (if at all), and only within the if block.
+
+It doesn't exist in the else block.
+
+-----Section 3-----
+
+What happens:
+
+Logs:
+
+Served a special fish
+Served a special lettuce plate
+Served a special curious cheese
+Finished serving all the orders: fish,lettuce plate,curious cheese
+
+Why?
+Everything is in scope.
+
+No errors.
+
+specialOrder is block-scoped, only needed inside the loop.
+
+Scope:
+serveOrders: local function scope
+
+specialOrder: local to each loop iteration
+
+order: also block-scoped in the loop
+
+-----Section 4-----
+
+What happens:
+Error: seed is not defined
+
+Why?
+seed is declared inside getSeed(), and is not accessible from plant().
+
+Trying to access seed outside its function causes a ReferenceError.
+
+Scope:
+pot: global
+
+seed: local to getSeed
+
+plant: function scope
+
+-----Section 5-----
+
+What happens:
+Error: found is not defined
+
+Why?
+found is declared inside the if block using const, so it’s block-scoped and not accessible outside the if.
+
+Trying to return found causes a ReferenceError.
+
+Scope:
+users, u, and found are all local inside doesUserExist, but found is block-scoped inside if.
+
+-----Section 6-----
+
+What happens:
+Error: Assignment to constant variable
+
+Why?
+isEnough is declared with const (cannot be reassigned).
+
+In makeEnough, you're trying to assign true to isEnough, which throws a TypeError.
+
+Scope:
+isEnough: global constant
+
