@@ -1,0 +1,106 @@
+
+------Exercise 1------
+
+O(n) - it depens on the length of the bankOperations array.
+
+------Exercise 2------
+
+O(log n) - The loop index i doubles each time: 1, 2, 4, 8, ...
+So it runs approximately log₂(n) times.
+
+------Exercise 3------
+
+O(n) (in total)
+
+filter() runs in O(n)
+
+getHype() for each relevant item is O(1)
+
+So the total is proportional to the number of items → O(n)
+
+------Exercise 4------
+
+O(s × q)
+Where:
+
+s = number of students (length of studentGithubs)
+
+q = number of questions per student
+
+This is a nested loop: for each student → for each answer → constant-time update.
+
+------Exercise 5------
+
+O(r)
+Where r is the number of recipients.
+
+generateEmail() = O(1)
+
+sendEmails() calls .forEach on recipients = O(r)
+
+------Exercise 6------
+
+const findDuplicates = function (arr) { 
+    let dictArr = {}
+    for (let item of arr) {
+        if (dictArr[item]) {
+            console.log("There is a duplicate")
+            return
+        }
+        else {
+            dictArr[item]= true
+        }
+    }
+    console.log("No duplicates found")
+}
+
+------Exercise 7------
+
+We will store the data in a dictionary
+
+const employees = {
+  ax01: { name: "Ray", age: 28, salary: 1300 },
+  qs84: { name: "Lucius", age: 31, salary: 840 },
+  bg33: { name: "Taylor", age: 18, salary: 2700 }
+}
+
+const findEmployeeSalary = function(employeeID) {
+  return employees[employeeID].salary
+}
+
+Time Complexity: O(1)
+
+Object key lookups in JavaScript are constant time.
+
+------Exercise 8------
+
+const findIndex = function(numbers, num) {
+  let low = 0
+  let high = numbers.length - 1
+
+  while (low <= high) {
+    let mid = Math.floor((low + high) / 2)
+    if (numbers[mid] === num) {
+      return mid
+    } else if (numbers[mid] < num) {
+      low = mid + 1
+    } else {
+      high = mid - 1
+    }
+  }
+
+  return -1 // Not found
+}
+
+let numbers = [24, 33, 66, 102, 108, 140, 146, 177, 182, 217, 341, 357, 372, 390, 418, 427, 442, 444, 469, 480, 572, 624, 627, 665, 680, 694, 743, 768, 790, 794, 852, 896, 919, 942, 982, 991, 1026, 1055, 1086, 1137, 1141, 1157, 1167, 1271, 1272, 1273, 1301, 1337, 1340, 1344, 1388, 1455, 1465, 1466, 1509, 1555, 1640, 1667, 1667, 1689, 1824, 1897, 1928, 1950, 1987, 2056, 2059, 2070, 2123, 2140, 2198, 2215, 2260, 2304, 2383, 2403, 2433, 2454, 2472, 2480, 2481, 2535, 2543, 2554, 2557, 2580, 2630, 2634, 2671, 2745, 2792, 2839, 2849, 2871, 2873, 2893, 2932, 2962, 2984, 2987]
+
+console.log(findIndex(numbers, 2630)) // Should log 86
+
+
+------Exercise 9------
+green - O(1)
+yellow - O(nlogn)
+blue - O(n)
+red - O(n^2)
+
+
