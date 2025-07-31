@@ -11,7 +11,37 @@ body {
   padding: 20px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.08);
+  z-index: 999;
+  position: relative;
+}
+
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+select {
+  padding: 6px;
+  border-radius: 6px;
 }
 
 .profile-card {
@@ -22,7 +52,15 @@ body {
   color: white;
   padding: 15px;
   border-radius: 8px;
+  margin-top: 20px;
 }
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 .avatar {
   width: 80px;
@@ -31,8 +69,10 @@ body {
   object-fit: cover;
 }
 
-.quote-text {
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+.quote-section,
+.pokemon-section,
+.about-section,
+.friends-section {
   margin-top: 20px;
 }
 
@@ -40,12 +80,6 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-top: 20px;
-}
-
-.about-section,
-.friends-section {
-  margin-top: 30px;
 }
 
 #friends-list {
@@ -61,21 +95,20 @@ body {
   border-radius: 5px;
 }
 
-.controls {
-  margin-top: 30px;
+.quote-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #444;
+  margin-top: 20px;
+  text-align: center;
 }
 
-button {
-  margin-right: 10px;
-  padding: 8px 15px;
-  border: none;
-  border-radius: 6px;
-  background-color: #4caf50;
-  color: white;
-  cursor: pointer;
-}
 
-select {
-  padding: 6px;
-  border-radius: 6px;
+.profile-card,
+.quote-section,
+.pokemon-section,
+.about-section,
+.friends-section {
+  display: none;
 }
